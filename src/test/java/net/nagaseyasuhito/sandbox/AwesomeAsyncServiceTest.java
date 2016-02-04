@@ -16,10 +16,10 @@ import lombok.extern.java.Log;
 public class AwesomeAsyncServiceTest {
 
 	@Autowired
-	private AwesomeAsyncService awesomeAsyncService;
+	private AsyncService asyncService;
 
 	@Test
 	public void test() throws InterruptedException, ExecutionException {
-		log.info(this.awesomeAsyncService.process("nagaseyasuhito").get());
+		log.info(this.asyncService.process("nagaseyasuhito").get());
 	}
 }
